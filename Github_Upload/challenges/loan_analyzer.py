@@ -17,17 +17,19 @@ loan_costs = [500, 600, 200, 1000, 450]
 # How many loans are in the list?
 # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # Print the number of loans from the list
-# YOUR CODE HERE!
+print("The number of loans are", len(loan_costs))
 
 # What is the total of all loans?
 # @TODO: Use the `sum` function to calculate the total of all loans in the list.
 # Print the total value of the loans
-# YOUR CODE HERE!
+print('The sum of all loans is', sum(loan_costs))
 
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
-# YOUR CODE HERE!
+average_loan = (sum(loan_costs))/(len(loan_costs))
+print('The average loan in',average_loan)
+
 
 """Part 2: Analyze Loan Data.
 
@@ -63,6 +65,12 @@ loan = {
 # @TODO: Use get() on the dictionary of additional information to extract the Future Value and Remaining Months on the loan.
 # Print each variable.
 # YOUR CODE HERE!
+future_value = loan.get('future_value')
+remaining_months = loan.get('remaining_months')
+print('The future value of the loan is',future_value)
+print('The remaining amount of months on the loan is',remaining_months)
+
+
 
 
 # @TODO: Use the formula for Present Value to calculate a "fair value" of the loan.
